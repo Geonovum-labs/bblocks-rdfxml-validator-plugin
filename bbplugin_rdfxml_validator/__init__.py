@@ -27,6 +27,7 @@ class RdfXmlValidator:
     Example bblock.json declaration:
         "resources": [{
             "role": "validation",
+            "ref": "",
             "format": "application/rdf+xml",
             "conformsTo": "https://www.w3.org/2001/XMLSchema"
         }]
