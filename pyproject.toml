@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bbplugin-rdfxml-validator"
+version = "0.1.0"
+description = "validation plugin for OGC Building Blocks framework to validate rdf/xml"
+requires-python = ">=3.10"
+dependencies = [
+    "lxml",
+    "rdflib"
+]
