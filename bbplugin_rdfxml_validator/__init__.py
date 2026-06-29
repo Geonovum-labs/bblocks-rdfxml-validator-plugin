@@ -32,7 +32,7 @@ class RdfXmlValidator:
         }]
     """
 
-    mime_types = ['application/xml', 'text/xml', 'application/rdf+xml']
+    mime_types = ['application/rdf+xml']
     file_extensions = ['.xml', '.rdf']
 
     def validate(self, meta):
