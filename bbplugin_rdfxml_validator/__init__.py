@@ -46,7 +46,7 @@ class RdfXmlValidator:
             graph.parse(meta.input_path, format='xml')
 
             graph.serialize(meta.input_path.replace('.xml', '.ttl'), format='turtle')
-        except Error as err:
+        except Exception as err:
             return [{'message': f'Invalid RDF/XML file: {err}', 'is_error': True}]
 
         return [{'message': f'RDF/XML file is valid ({meta.display_filename})',
